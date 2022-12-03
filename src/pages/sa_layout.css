@@ -1,0 +1,35 @@
+﻿/*
+   EKU CSC 496
+
+   Blue Team Cyber Security Styles
+   Author: Nathaniel Murphy
+   Date:   9/5/2022
+
+*/
+
+/* Layout styles */
+
+
+body {
+margin: 0px auto;
+padding: 0px;
+width: 98%;
+position: relative;
+max-width: 1250px;
+min-width: 850px;
+}
+
+header, footer {
+margin: 0px auto;
+width: auto;
+}
+
+section {
+width:fit-content ;
+float: none;
+}
+
+address {
+clear: both;
+width: 100%;
+}

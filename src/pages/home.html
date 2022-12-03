@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      EKU CSC 496
+
+      Blue Team Cyber Security Home Page
+      Author: Nathaniel Murphy
+      Date: 9/5/2022 [last edited]   
+
+      Filename:         home.htm
+      Supporting files: sa_layout.css, btcs3logo.png, sastyles.css
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Blue Team Cyber Security</title>
+
+      <link href="sa_layout.css" rel="stylesheet" type="text/css" />
+      <link href="sa_styles.css" rel="stylesheet" type="text/css" />
+
+      <style type="text/css">
+         section > p:first-of-type:first-line {
+            text-transform: uppercase;
+         }
+
+         section > p:first-of-type:first-letter {
+            font-size: 250%;
+            font-family: 'Times New Roman', times, serif;
+         }
+      </style>
+      <script type="text/javascript">
+        window.onload = function () {
+          var chart = new CanvasJS.Chart("chartContainer",
+          {
+      
+            title:{
+            text: "Weight Tracker"
+            },
+             data: [
+            {
+              type: "line",
+      
+              dataPoints: [
+              { x: new Date(2022, 00, 1), y: 266 },
+              { x: new Date(2022, 01, 1), y: 264 },
+              { x: new Date(2022, 02, 1), y: 263 },
+              { x: new Date(2022, 03, 1), y: 260 },
+              { x: new Date(2022, 04, 1), y: 258 },
+              { x: new Date(2022, 05, 1), y: 256 },
+              { x: new Date(2022, 06, 1), y: 253 },
+              { x: new Date(2022, 07, 1), y: 250 },
+              { x: new Date(2022, 08, 1), y: 250 },
+              { x: new Date(2022, 09, 1), y: 248 },
+              { x: new Date(2022, 10, 1), y: 247 },
+              { x: new Date(2022, 11, 1), y: 245 }
+              ]
+            }
+            ]
+          });
+      
+          chart.render();
+        }
+        </script>
+       <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+   </head>
+
+   <body>
+
+      <header>
+         <h1> <!--This is my company logo-->
+            <img src="btcslogo3.png" alt="Blue Team Cyber Security"/>
+         </h1>
+
+      </header>       
+
+      <section>
+         <header>
+            <h1>Welcome</h1>
+         </header>
+
+         
+
+         <p id="firstp"> <!--This is my introduction and button that triggers javascript-->
+            This is my website for my fake <small>[for now]</small> company called Blue Team 
+            Cyber Security! I am Nathaniel Murphy, a 28 year old Kentucky native, who will be graduating
+            from EKU this Fall. This is a simple website showing some HTML, CSS, and JavaScript. 
+            I will be able to contuously improve on this site if I have the free time to do so. 
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            <div class="dropdown">
+               <button id="myBtn" class="dropbtn">Click Here to See More About Nathaniel</button>
+               <div id="myDropdown" class="dropdown-content">
+                 <a id="s+q" href="#s+q">Skills and Qualifications</a>
+                 <a id="edu" href="#edu">Education</a>
+                 <a id="ap" href="#ap">Academic Projects</a>
+               </div>
+             </div>
+         </p>
+
+         
+
+         <p>While my company might specialize in network security we are able to handle
+            many computer science and networking issues. From network planning, to software engineering 
+            we are able to handle your wants and needs. If you would like to contact me,   
+            <a href="www.linkedin.com/in/nathaniel-murphy/">click here</a> to go to my LinkedIn page.
+            If email is more your style you may contact nathaniel_murphy5@mymail.eku.edu and I will reply
+            as soon as I am able too. Thank you for visiting my website, I hope you liked it!
+            Comments or constructive criticism is welcome, just send me an email! 
+         </p>
+
+ 
+         <!--This is my Skills and Qualifications section, which is hidden by default-->
+         <h2 hidden id="s+q2">Skills and Qualifications</h2>
+         <ul hidden id="s+q3">
+            <li>Planned multiple networks and experienced in troubleshooting network devices. </li>
+               <ul>
+                  <li>Windows Server 2012 and PowerShell: two years’ experience.</li>
+                  <li>Cisco devices and training for Cisco certifications: three years’ experience.</li>
+               </ul>
+            <li>Programming languages: C++, Python, Java, JavaScript, SQL, and more.</li>
+            <li>Installed and configured Windows and Linux operating systems.</li>
+            <li>Experience utilizing integrated development environment software and normalizing databases.</li>
+            <li>Practiced telecommuting for over five years with online and hybrid classes.</li>
+         </ul>
+
+         <!--This is my Education section, which is hidden by default-->
+         <h2 hidden id="edu2">Education</h2>
+         <ul hidden id="edu3">                                        <!--These are to keep spaces in the list-->
+            <li><b>Eastern Kentucky University</b> – Richmond, KY &#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193; (August 2015 – December 2022)
+               <br>B.S. in Computer Science &#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8197; <i>Expected to graduate in Fall 2022</i>
+               <br>B.S. in Cyber Systems Technology</li>
+               <ul><li>Overall GPA:  3.32</li></ul>
+            <br><li><b>Somerset Community College</b> – Somerset, KY &#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193;&#8193; (August 2011 – December 2014)
+            <br>A.S. in Computer Information Technology</li>
+         </ul> 
+
+         <!--This is my Academic Projects section, which is hidden by default-->
+         <h2 hidden id="ap2">Academic Projects</h2>
+         <ul hidden id="ap3">
+            <li>Determined defensive capabilities of a network using Kali Linux.</li>
+            <li>Co-Designed and developed a money-budget application for a common game.</li>
+            <li>Integrated applications and programs that connected with a database.</li>
+            <li>Created over fifty object-oriented Python and Java programs.</li>
+            <li>Authored more than ten technical project reports.</li>
+            <li>Utilized Hadoop and MapReduce to gather organized information from big data.</li>
+            <li>Coded several Android applications.</li>
+            <li>Developed a professional website using HTML, CSS, and JavaScript.</li>
+         </ul>
+
+      </section>
+      
+      <footer>
+         <address>
+            Blue Team Cyber Security &nbsp;&#9929;&nbsp;
+            Nathaniel Joseph Murphy &nbsp;&#9929;&nbsp;
+            Jacksboro Street &nbsp;&#9929;&nbsp;
+            Ferguson, KY &nbsp;&nbsp; 42533
+         </address>
+      </footer>
+
+      <!--Start of javascript-->
+      <script>
+         // Get the button, and when the user clicks on it, execute myFunction
+         document.getElementById("myBtn").onclick = function() {myFunction()};
+         
+         /* myFunction toggles between adding and removing the show class,
+          which is used to hide and show the dropdown content */
+         function myFunction() {
+           document.getElementById("myDropdown").classList.toggle("show");
+         }
+
+         //Skills and Qualifications section
+         document.getElementById("s+q").onclick = function() {showSkills()};
+
+         function showSkills() {
+            document.getElementById("s+q2").classList.toggle("show");
+            document.getElementById("s+q3").classList.toggle("show");
+         }
+
+         //Education section
+         document.getElementById("edu").onclick = function() {showEdu()};
+
+         function showEdu() {
+            document.getElementById("edu2").classList.toggle("show");
+            document.getElementById("edu3").classList.toggle("show");
+         }
+
+         //Academic Projects scetion
+         document.getElementById("ap").onclick = function() {showAp()};
+
+         function showAp() {
+            document.getElementById("ap2").classList.toggle("show");
+            document.getElementById("ap3").classList.toggle("show");
+         }
+         </script>
+
+   </body>
+
+</html>
